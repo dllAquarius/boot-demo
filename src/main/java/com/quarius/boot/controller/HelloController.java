@@ -2,6 +2,7 @@ package com.quarius.boot.controller;
 
 import com.quarius.boot.bean.Car;
 
+import com.quarius.boot.bean.Person;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @Autowired
-    private Car car;
+    private Car    car;
+    @Autowired
+    private Person person;
 
     @RequestMapping("/car")
     public Car car(){
@@ -32,5 +35,10 @@ public class HelloController {
 
         return "Hello,Springboot"+name;
 
+    }
+
+    @RequestMapping("/person")
+    public Person person(){
+        return person;
     }
 }

@@ -52,6 +52,6 @@ public class MyConfig {
 
 //    @Bean("tom")
     public Pet pet1(){
-        return new Pet("tom");
+        return new Pet("tom",22.22);
     }
 }

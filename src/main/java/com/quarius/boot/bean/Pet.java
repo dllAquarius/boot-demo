@@ -17,5 +17,6 @@ import lombok.ToString;
 @NoArgsConstructor //全参构造器
 public class Pet {
     private String name;
+    private Double weight;
 
 }
